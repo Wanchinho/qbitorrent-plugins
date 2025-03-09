@@ -12,7 +12,7 @@ from helpers import download_file, retrieve_url
 MAX_PAGES = 10
 
 class mejortorrent(object):
-    url = 'https://www28.mejortorrent.eu/'
+    url = 'https://www28.mejortorrent.eu'
     name = 'MejorTorrent'
     supported_categories = {'all': '0', 'movies': 'pelicula', 'tv': 'serie'}
 
@@ -154,3 +154,4 @@ class mejortorrent(object):
         html = retrieve_url(link)
         self.tv_parser.init(link)
         self.tv_parser.feed(html)
+
